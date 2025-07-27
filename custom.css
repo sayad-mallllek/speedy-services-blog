@@ -1,0 +1,129 @@
+/* Force light mode and hide dark mode toggle */
+[data-theme="dark"] {
+  display: none !important;
+}
+
+html[data-theme="dark"] {
+  color-scheme: light !important;
+  background: white !important;
+}
+
+/* Override any dark mode styles */
+html[data-theme="dark"] * {
+  background: white !important;
+  color: #333 !important;
+}
+
+/* Hide the theme toggle button */
+button[aria-label*="theme"],
+button[aria-label*="Theme"],
+button[aria-label*="dark"],
+button[aria-label*="light"],
+.theme-toggle,
+[data-testid="theme-toggle"],
+[data-theme-toggle],
+.dark-mode-toggle {
+  display: none !important;
+}
+
+/* Hide sidebars for blog pages */
+.sidebar,
+.side-nav,
+.navigation-sidebar,
+nav[aria-label="Sidebar"],
+.docs-sidebar,
+.mintlify-sidebar {
+  display: none !important;
+}
+
+/* Hide breadcrumbs */
+.breadcrumbs,
+.breadcrumb,
+nav[aria-label="Breadcrumb"],
+.docs-breadcrumb,
+.mintlify-breadcrumb {
+  display: none !important;
+}
+
+/* Hide tab navigation for cleaner look */
+.tab-navigation,
+.docs-tabs,
+.mintlify-tabs,
+.navigation-tabs,
+[role="tablist"] {
+  display: none !important;
+}
+
+/* Make content full width without sidebar */
+.content,
+.main-content,
+.docs-content,
+.mintlify-content {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* Ensure the main container uses full width */
+.container,
+.max-w-7xl,
+.docs-container,
+.mintlify-container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 1rem !important;
+}
+
+/* Clean header styling */
+header {
+  border-bottom: 1px solid #e0e0e0 !important;
+  background: white !important;
+}
+
+/* Clean navigation bar */
+.navbar,
+.header-nav {
+  background: white !important;
+  border-bottom: 1px solid #e0e0e0 !important;
+}
+
+/* Force light theme colors */
+body,
+html {
+  background: white !important;
+  color: #333 !important;
+  --color-background: white !important;
+  --color-text: #333 !important;
+  --color-border: #e0e0e0 !important;
+}
+
+/* Hide any unnecessary navigation elements on the homepage */
+.homepage .sidebar,
+.homepage .navigation-sidebar,
+.homepage .docs-sidebar {
+  display: none !important;
+}
+
+/* Make the blog layout more spacious */
+.homepage .content,
+.homepage .main-content {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 2rem 1rem !important;
+}
+
+/* Clean up any residual dark mode elements */
+* {
+  color-scheme: light !important;
+}
+
+[data-theme="dark"] * {
+  filter: none !important;
+}
+
+/* Hide group labels in navigation if they appear */
+.navigation-group-label,
+.sidebar-group-label {
+  display: none !important;
+}

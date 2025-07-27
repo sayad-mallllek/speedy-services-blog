@@ -1,0 +1,70 @@
+# Custom Styles Component
+
+<style jsx global>{`
+/* Force light mode and hide dark mode toggle */
+[data-theme="dark"] {
+  display: none !important;
+}
+
+html[data-theme="dark"] {
+  color-scheme: light !important;
+  background: white !important;
+}
+
+/* Hide the theme toggle button */
+button[aria-label*="theme"],
+button[aria-label*="Theme"], 
+button[aria-label*="dark"],
+button[aria-label*="light"],
+.theme-toggle,
+[data-testid="theme-toggle"],
+[data-theme-toggle],
+.dark-mode-toggle {
+  display: none !important;
+}
+
+/* Hide sidebars for blog pages */
+.sidebar,
+.side-nav,
+.navigation-sidebar,
+nav[aria-label="Sidebar"],
+.docs-sidebar,
+.mintlify-sidebar {
+  display: none !important;
+}
+
+/* Hide breadcrumbs */
+.breadcrumbs,
+.breadcrumb,
+nav[aria-label="Breadcrumb"],
+.docs-breadcrumb,
+.mintlify-breadcrumb {
+  display: none !important;
+}
+
+/* Hide tab navigation for cleaner look */
+.tab-navigation,
+.docs-tabs,
+.mintlify-tabs,
+.navigation-tabs,
+[role="tablist"] {
+  display: none !important;
+}
+
+/* Make content full width */
+.content,
+.main-content,
+.docs-content,
+.mintlify-content {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* Force light theme colors */
+body, html {
+  background: white !important;
+  color: #333 !important;
+}
+`}</style>

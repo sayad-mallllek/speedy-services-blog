@@ -1,44 +1,130 @@
-# Mintlify Starter Kit
+# Speedy Services Blog
 
-Use the starter kit to get your docs deployed and ready to customize.
+A developer productivity blog built with Mintlify, focused on helping developers work faster and smarter through better tools, techniques, and workflows.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+🌐 **Live Site**: [https://speedyservices.blog](https://speedyservices.blog)
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+## What You'll Find Here
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+### 🚀 Development Best Practices
 
-## Development
+- Modern development workflows and tooling
+- Code quality and architecture patterns
+- Testing strategies and automation
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+### ⚡ Productivity Tips
 
-```
+- Workflow optimization techniques
+- Time management for developers
+- Automation strategies that save hours
+
+### 🛠️ Tool Reviews & Comparisons
+
+- In-depth analysis of development tools
+- AI coding assistant comparisons
+- Setup guides and configurations
+
+### 🤖 AI Tools Integration
+
+- Comprehensive guides for Cursor, Claude, and Windsurf
+- Best practices for AI-assisted development
+- Productivity tips for AI tools
+
+## Featured Content
+
+- **[Getting Started with Modern Development](/blog/development/getting-started-modern-dev)** - Essential tools and practices for 2024
+- **[Workflow Optimization Guide](/blog/productivity/workflow-optimization)** - 10 proven strategies to boost productivity
+- **[AI Tools Comparison](/blog/tools/ai-tools-comparison)** - Cursor vs Claude vs Windsurf detailed analysis
+- **[Automation Tips](/blog/productivity/automation-tips)** - 15 tasks every developer should automate
+
+## Local Development
+
+Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview the blog locally:
+
+```bash
 npm i -g mint
 ```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+Run the following command in the root directory:
 
-```
+```bash
 mint dev
 ```
 
-View your local preview at `http://localhost:3000`.
+The blog will be available at `http://localhost:3000`.
 
-## Publishing changes
+## Content Structure
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+## Content Structure
 
-## Need help?
+```
+/
+├── index.mdx                 # Homepage
+├── archive.mdx              # Blog archive page
+├── newsletter.mdx           # Newsletter subscription
+├── contact.mdx              # Contact page
+├── privacy.mdx             # Privacy policy
+├── terms.mdx               # Terms of service
+├── about/
+│   └── mission.mdx         # About us page
+├── blog/
+│   ├── development/        # Development articles
+│   ├── productivity/       # Productivity guides
+│   └── tools/             # Tool reviews
+└── ai-tools/              # AI tool setup guides
+    ├── cursor.mdx
+    ├── claude-code.mdx
+    └── windsurf.mdx
+```
 
-### Troubleshooting
+## Contributing
 
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
+We welcome contributions from experienced developers! Here's how you can help:
 
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
-- [Mintlify community](https://mintlify.com/community)
+### Writing Guidelines
+
+- **Practical focus**: Include real-world examples and code snippets
+- **Step-by-step guides**: Break down complex topics into actionable steps
+- **Tool-agnostic**: Compare options objectively, recommend based on use cases
+- **Quality over quantity**: Thoroughly research and test before publishing
+
+### Content Ideas
+
+- Development workflow optimizations
+- Tool setup guides and configurations
+- Performance optimization techniques
+- Team collaboration best practices
+- New technology evaluations
+
+### Submission Process
+
+1. Fork this repository
+2. Create a new branch for your article
+3. Write your content in MDX format following our style guide
+4. Test locally with `mint dev`
+5. Submit a pull request with a clear description
+
+## Publishing
+
+Content is automatically deployed when changes are pushed to the main branch. The blog is hosted on Mintlify's platform for optimal performance and SEO.
+
+## Contact
+
+- **Email**: hello@speedyservices.blog
+- **Twitter**: [@speedyservices](https://x.com/speedyservices)
+- **LinkedIn**: [Speedy Services](https://linkedin.com/company/speedyservices)
+
+## Mission
+
+Our mission is to help developers work faster and smarter by sharing:
+
+- Battle-tested productivity techniques
+- Honest tool reviews and comparisons
+- Real-world automation strategies
+- Modern development best practices
+
+We believe in speed without sacrifice—working faster while maintaining code quality, security, and maintainability.
+
+---
+
+_Built with ❤️ using [Mintlify](https://mintlify.com)_
