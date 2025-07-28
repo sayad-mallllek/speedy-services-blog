@@ -22,7 +22,13 @@
     "strict": true
   },
   "search": { "prompt": "Search for articles" },
-
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Checkout our website",
+      "href": "https://speedyservices.org"
+    }
+  },
   "logo": {
     "light": "/speedy-services-logo.svg",
     "dark": "/speedy-services-logo.svg"
